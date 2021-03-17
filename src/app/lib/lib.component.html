@@ -1,0 +1,17 @@
+
+
+<div class="top">
+
+    <h3> My Library</h3>
+   
+    <button routerLink="/add">New book</button>
+
+  </div>
+  
+  <div class="list">
+    <ul>
+      <li *ngFor="let book of books; let i = index"><span> {{ book.ISBN }} | {{ book.book }} | {{ book.author }} | {{ book.publisher }} | {{ book.date }} </span><button (click)="remove(i)">Delete book</button></li>
+    </ul>
+  </div>
+  
+  

@@ -1,0 +1,24 @@
+
+
+<div class="top">
+
+    <h3>New Book</h3>
+   
+   <div class="line"> <button routerLink="/" class="red">Cancel</button>
+    <button (click)='add(ISBN, book, author, publisher, date)' >Save book</button>
+    <!-- ISBN, Book, Author, Publisher, Date -->
+  </div>
+
+  </div>
+  
+  <div class='add'>
+    <ul>
+      <li><span>ISBN</span><input type="text" [(ngModel)]='ISBN'></li>
+      <li><span>Book</span><input type="text" [(ngModel)]='book'></li>
+      <li><span>Author</span><input type="text" [(ngModel)]='author'></li>
+      <li><span>Publisher</span><input type="text" [(ngModel)]='publisher'></li>
+      <li><span>Date</span><input type="text" [(ngModel)]='date'></li>
+    </ul>
+  </div>
+  
+  
